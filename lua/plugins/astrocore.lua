@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -44,36 +42,35 @@ return {
     mappings = {
       -- first key is the mode
       n = {
-    -- second key is the lefthand side of the map
-    -- mappings seen under group name "Buffer"
-    ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
-    ["<leader>bD"] = {
-      function()
-        require("astronvim.utils.status").heirline.buffer_picker(
-          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
-        )
-      end,
-      desc = "Pick to close",
-    },
-    -- this is useful for naming menus
-    ["<leader>b"] = { name = "Buffers" },
+        -- second key is the lefthand side of the map
+        -- mappings seen under group name "Buffer"
+        ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+        ["<leader>bD"] = {
+          function()
+            require("astronvim.utils.status").heirline.buffer_picker(
+              function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+            )
+          end,
+          desc = "Pick to close",
+        },
+        -- this is useful for naming menus
+        ["<leader>b"] = { name = "Buffers" },
 
-    -- quick save
-    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+        -- quick save
+        ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
 
-    -- move buffer
-    ["<S-l>"] = { "<cmd>bnext<cr>", desc = "Next Buffer" },
-    ["<S-h>"] = { "<cmd>bprev<cr>", desc = "Prev Buffer" },
+        -- move buffer
+        ["<S-l>"] = { "<cmd>bnext<cr>", desc = "Next Buffer" },
+        ["<S-h>"] = { "<cmd>bprev<cr>", desc = "Prev Buffer" },
 
-    -- terminal
-    ["<leader>i"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle floating terminal" },
-  },
-  t = {},
-  v = {
-    ["J"] = { ":move '>+1<CR>gv-gv", desc = "Move lines of code up" },
-    ["K"] = { ":move '<-2<CR>gv-gv", desc = "Move lines of code down" },
-  },
-      
+        -- terminal
+        ["<leader>i"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle floating terminal" },
+      },
+      t = {},
+      v = {
+        ["J"] = { ":move '>+1<CR>gv-gv", desc = "Move lines of code up" },
+        ["K"] = { ":move '<-2<CR>gv-gv", desc = "Move lines of code down" },
+      },
     },
   },
 }
