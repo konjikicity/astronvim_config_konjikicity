@@ -13,6 +13,7 @@ vim.filetype.add {
     ["Foofile"] = "fooscript",
   },
   pattern = {
-    ["~/%.config/foo/.*"] = "fooscript",
-  },
+    [".*%.blade%.php"] = "blade",
+    ["*.md"] = "md",
+  }
 }
