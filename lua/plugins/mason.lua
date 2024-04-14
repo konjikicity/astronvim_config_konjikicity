@@ -16,7 +16,7 @@ return {
         "tailwindcss",
         "html",
         "cssls",
-        "phpactor",
+        "intelephense",
         "rubocop",
         "dockerls",
         "volar",
@@ -34,7 +34,6 @@ return {
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "prettier",
         "stylua",
-        "phpcbf",
         -- add more arguments for adding more null-ls sources
       })
     end,
