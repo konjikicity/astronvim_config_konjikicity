@@ -10,6 +10,17 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "lua_ls",
+        "tsserver",
+        "jsonls",
+        "yamlls",
+        "tailwindcss",
+        "html",
+        "cssls",
+        "phpactor",
+        "rubocop",
+        "dockerls",
+        "volar",
+        "pylsp",
         -- add more arguments for adding more language servers
       })
     end,
@@ -23,6 +34,7 @@ return {
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "prettier",
         "stylua",
+        "phpcbf",
         -- add more arguments for adding more null-ls sources
       })
     end,
@@ -33,7 +45,6 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "python",
         -- add more arguments for adding more debuggers
       })
     end,
