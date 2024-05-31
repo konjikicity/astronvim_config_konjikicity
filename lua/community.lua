@@ -8,4 +8,5 @@ return {
 
   -- colorscheme
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.recipes.vscode-icons" },
 }

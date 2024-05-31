@@ -24,10 +24,10 @@ return {
       "vim",
       "yaml",
       "vue",
+      "twig",
     })
   end,
 
-  -- laravel blade
   config = function(_, opts)
     require("nvim-treesitter.configs").setup(opts)
 
