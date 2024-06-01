@@ -18,6 +18,7 @@ return {
         "intelephense",
         "rubocop",
         "pylsp",
+        "twiggy_language_server",
       })
     end,
   },
