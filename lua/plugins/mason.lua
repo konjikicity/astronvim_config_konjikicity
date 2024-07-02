@@ -15,7 +15,7 @@ return {
         "tailwindcss",
         "html",
         "cssls",
-        "intelephense",
+        "phpactor",
         "rubocop",
         "pylsp",
         "twiggy_language_server",
@@ -32,7 +32,7 @@ return {
         "prettier",
         "stylua",
         "blade-formatter",
-        "php-cs-fixer",
+        "pint",
         -- add more arguments for adding more null-ls sources
       })
     end,
