@@ -15,7 +15,7 @@ return {
         "tailwindcss",
         "html",
         "cssls",
-        "phpactor",
+        "intelephense",
         "rubocop",
         "pylsp",
         "twiggy_language_server",
