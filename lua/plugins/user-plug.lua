@@ -48,19 +48,4 @@ return {
       "rcarriga/nvim-notify",
     },
   },
-  {
-    "FotiadisM/tabset.nvim",
-    config = function()
-      require("tabset").setup {
-        defaults = {
-          tabwidth = 4,
-          expandtab = true,
-        },
-        filetypes = { "javascript", "typescript", "javascriptreact", "typescriptreact", "json", "yaml", "jsx", "tsx" },
-        config = {
-          tabwidth = 2,
-        },
-      }
-    end,
-  },
 }

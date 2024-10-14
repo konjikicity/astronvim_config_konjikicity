@@ -4,13 +4,13 @@
 
 ---@type LazySpec
 return {
-    "AstroNvim/astrocommunity",
+  "AstroNvim/astrocommunity",
 
-    -- colorscheme
-    { import = "astrocommunity.recipes.heirline-vscode-winbar" },
-    { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-    { import = "astrocommunity.recipes.vscode-icons" },
-    { import = "astrocommunity.pack.blade" },
-    { import = "astrocommunity.snippet.nvim-snippets" },
-    { import = "astrocommunity.git.blame-nvim" },
+  -- colorscheme
+  { import = "astrocommunity.recipes.heirline-vscode-winbar" },
+  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.recipes.vscode-icons" },
+  { import = "astrocommunity.pack.blade" },
+  { import = "astrocommunity.snippet.nvim-snippets" },
+  { import = "astrocommunity.git.git-blame-nvim" },
 }
