@@ -14,5 +14,4 @@ return {
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.utility.noice-nvim" },
-  { import = "astrocommunity.utility.live-server-nvim" },
 }
