@@ -5,8 +5,12 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim", -- required
     "sindrets/diffview.nvim", -- optional - Diff integration
+
+    -- Only one of these is needed.
     "nvim-telescope/telescope.nvim", -- optional
-    "ibhagwan/fzf-lua",
+    "ibhagwan/fzf-lua", -- optional
+    "echasnovski/mini.pick", -- optional
+    "folke/snacks.nvim", -- optional
   },
   config = function()
     require("neogit").setup {
@@ -16,7 +20,7 @@ return {
         diffview = true,
       },
       commit_editor = {
-        kind = "split",
+        kind = "auto",
         show_staged_diff = false,
       },
     }
